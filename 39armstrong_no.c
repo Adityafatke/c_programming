@@ -19,10 +19,8 @@ int main()
         result=result+pow(rem,cnt);
         n=n/10;
     }
-        if(result==temp)
+        if(result==temp) 
             printf("armstrong number");
      else
      printf("not armstrong");
-        
-    
-}
+    }

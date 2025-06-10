@@ -9,11 +9,11 @@ int main()
     {
         for(j=1;j<=n;j++)
         {
-            if(i==2||j==2&&j==3)
-            printf(" ");
+            if(i==n||i==1||j==1||j==n)
+            printf(" * ");
             else
-            printf( " * ");
+            printf("   ");
         }
-    printf("*\n *");
+            printf("\n");
     }   
 }

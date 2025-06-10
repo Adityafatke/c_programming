@@ -5,11 +5,15 @@ int main()
     printf("enter a number");
     scanf("%d",&n);
 
-    for ( i = 1; i <=n; i++)
-    {
+//  5
+//  5 4
+//  5 4 3
+//  5 4 3 2
+//  5 4 3 2 1
+    for ( i = 1; i <=n; i++)   
+   {
       for ( j = 1; j<=i; j++)
       {
-       
         printf(" %d",p);
         p--;
       }

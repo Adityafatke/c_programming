@@ -1,24 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,n,i;
+    long int a,b,c,n,i;
     a=0;
     b=1;
     printf("enter a number");
-    scanf("%d",&n);
+    scanf("%ld",&n);
     if(n==1)
-    printf("  %d   ",a);
+    printf("  %ld   ",a);
 
     else if(n==2)
-    printf("%d %d",a,b);
-
+    printf("%ld %ld",a,b);
+                                 // addition of privious two will be the next
     else if (n>2)
     {
-        printf("%d %d",a,b);
+        printf("%ld %ld",a,b);
         for(i=2;i<n;i++)
         {
             c=a+b;
-            printf("  %d",c);
+            printf(" \n %ld",c);
             a=b;
             b=c;
         }

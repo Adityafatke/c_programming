@@ -15,7 +15,7 @@ scanf("%d",&ch);
 
 switch(ch)
 {
-    case 1:printf("addition=%d%d"a+b);
+    case 1:printf("addition=%d%d",a+b);
     break;
 
     case 2:printf("subtraction=%d",a-b);

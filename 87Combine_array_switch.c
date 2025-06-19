@@ -77,10 +77,10 @@ int main()
                         }
                         printf("after number delition array=");
                         for ( i = 0; i <n; i++)
-                        printf("%d",a[i]);
+                        printf("\n%d",a[i]);
                         break;
                         
-                        case 5:
+                        case 5://number count in array
                         printf("enter a key");
                         scanf("%d",&key);
                          for(i=0;i<n;i++)
@@ -92,10 +92,9 @@ int main()
                         printf("no is not present in array");
                         else
                         printf("number count=%d",count);
-                        return 0;
                         break;
 
-                        case 6:
+                        case 6: //array reverce
                         for(i=0;i<n/2;i++)
                          {
                          temp=a[i];
@@ -104,14 +103,14 @@ int main()
                          }
                          printf("reverce array=");
                          for ( i = 0; i <n; i++)
-                         printf("%d",a[i]);                   
+                         printf("\n%d",a[i]);                   
                          break;
 
                          case 7:
-                         break;
+                         return 0;
+                         
                         
-            
-                         default:
+                          default:
                          printf("Invalid Choice !!");
                          break;
         }

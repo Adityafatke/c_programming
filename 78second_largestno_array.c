@@ -10,7 +10,7 @@ int main()
         scanf("%d", &a[i]);
 
     max = a[0];
-   // second = INT_MIN;
+   
    second=0;
     for (i = 1; i < n; i++)
     {

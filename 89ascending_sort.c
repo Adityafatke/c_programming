@@ -4,7 +4,7 @@ int main()
     int i,j,temp,a[100],n;
     printf("enter how many number you want");
     scanf("%d",&n);
-    printf("enter a element ");
+    printf("enter a element");
     for(i=0;i<n;i++)
      scanf("%d",&a[i]);
 

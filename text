@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include "number.h"
+int main()
+{
+    int n, ch;
+
+    while (1)
+    {
+        printf("\n1. Perfect \n2. Prime \n3. Palindrome\n4. Reverse\n5. Armstrong\n6. EXIT\nEnter a Choice : ");
+        scanf("%d", &ch);
+
+        switch (ch)
+        {
+        case 1:
+            printf("Enter a Number : ");
+            scanf("%d", &n);
+            if (isPerfect(n))
+                printf("%d is Perfect Number ", n);
+            else
+                printf("%d is NOT Perfect Number ", n);
+            break;
+        case 2:
+            printf("Enter a Number : ");
+            scanf("%d", &n);
+            if (isPrime(n))
+                printf("%d is Prime Number ", n);
+            else
+                printf("%d is NOT Prime Number ", n);
+            break;
+        case 3:
+            printf("Enter a Number : ");
+            scanf("%d", &n);
+            if (reverse(n) == n)
+                printf("%d is Palindrome Number ", n);
+            else
+                printf("%d is NOT Palindrome Number ", n);
+            break;
+        case 4:
+            printf("Reverse Number is : %d", reverse(n));
+            break;
+        case 5:
+            printf("Enter a Number : ");
+            scanf("%d", &n);
+            if (isArmstrong(n))
+                printf("%d is Armstrong Number ", n);
+            else
+                printf("%d is NOT Armstrong Number ", n);
+            break;
+        case 6:
+            return 0;
+        default:
+            printf("INVLAID CHOICE !!");
+        }
+    }
+}

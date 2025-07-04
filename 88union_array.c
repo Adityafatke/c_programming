@@ -31,9 +31,7 @@ int main()
                 j--;
             }
         }
-    }
-
-    // Remove duplicates from array b
+    }    // Remove duplicates from array b
     for (i = 0; i < n2; i++)
     {
         for (j = i + 1; j < n2; j++)

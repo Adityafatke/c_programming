@@ -1,10 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int i,j,n,a[100],key;
-    printf("enter how many number you want");
+    int i,j,key,n,a[100];
+    printf("enter a N");
     scanf("%d",&n);
-    printf("enetr a number");
+
+    printf("enter a element");
     for(i=0;i<n;i++)
     scanf("%d",&a[i]);
 
@@ -15,15 +16,14 @@ int main()
     {
         if(key==a[i])
         {
-            for(j=i;j<n-1;j++)
-                a[j]=a[j+1];
+            for(j=i;j<n;j++)
+            a[j]=a[j+1];
 
-                n--;
-                break;
+            n--;
+            i--;
         }
-
     }
-    printf("after deleting single element=");
+    printf("after element delition array=\n");
     for(i=0;i<n;i++)
     printf("%d",a[i]);
 }
